@@ -1,0 +1,85 @@
+/*
+
+#23395B blue
+#828A95 grey-blue
+#FFFFFF white
+#8A817C grey
+#4C2E05 brown
+#322E18 black
+
+*/
+
+body {
+    background: #322E18;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px; 
+}
+
+#hero {
+    text-align: center;
+    padding: 5rem;
+    /* 1rem = default font size on user's browser
+    1rem = 10px
+    rem is far better for accessibility!! */
+}
+
+/* carot will select every h3 that is one level into the div */
+#hero > h3 {
+    margin-top: 0;
+}
+
+#hero h1 {
+    margin-bottom: 0;
+    font-size: 40px;
+    color:#23395B;
+    padding-left: 10px;
+}
+
+#hero img {
+    border-radius: 20px;
+}
+
+#hero > p {
+    letter-spacing: 1px;
+}
+
+#hero p {
+    line-height: 30px;
+}
+
+hr {
+    border-radius: 100%;
+    width: 50%;
+    /* when using percent, it's percent of the parent container!! */
+
+    margin: auto;
+}
+
+#experience-title {
+    text-align: center;
+}
+
+#experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.experience {
+    width: 70rem;
+    margin: auto;
+    padding: 2rem;
+    border-width: 3px;
+    border-style: dashed;
+    /* dotted */
+
+    margin-bottom: 2rem;
+    border-radius: 2px;
+    color: #322E18;
+    border-color: #8A817C;
+    background-color: #FFFFFF;
+}
+
+#LinkedIn-logo {
+    width: 20rem;
+}
