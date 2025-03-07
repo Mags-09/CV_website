@@ -5,21 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maggie's Personal Website</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
         <!-- links to go through website -->
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#experience-container">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 
     <!-- multiple classes can be called this name -- only one id can have this name -->
     <div id="hero">
-        <h1>Maggie McAndrew</h1>
-        <h2>Computer Science Student</h2>
-        <p>Hi! My name is Maggie. I am a computer science student at the University of Maryland.
-            I enjoy playing games, watching movies, and coding!
-        </p>
-        <img width=500px src="pfp.jpg" alt="profile pic" > <!-- self closing tag -->
-        
+        <div class="hero-text">
+            <h1>Maggie McAndrew</h1>
+            <h2>Computer Science Student</h2>
+            <p>Hi! My name is Maggie. I am a computer science student at the University of Maryland.
+                I enjoy playing games, watching movies, and coding!
+            </p>
+        </div>
+        <img width=500px src="pfp.jpeg" alt="profile pic" > <!-- self closing tag -->
     </div>
     <hr>
 
@@ -86,10 +93,22 @@
         </div>
     </div>
 
-    <a href="contact.html" Contact Information>
-    <button id="contact-button" onclick=""> See contact info </button>
+    <!-- <a href="contact.html" Contact Information>
+    <button id="contact-button" onclick=""> See contact info </button> -->
+
+    <div id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name: <input type="text" id="name" name="name" required> </label>
+            <label for="email">Email: <input type="email" id="email" name="email" required> </label>
+            <label for="message">Message: <textarea id="message" name="message" required></textarea> </label>
+            <button id="send-button" type="submit">Send</button>
+        </form>
+    </div>
+
     <footer>
         <!-- same as div, but is for accesibility (so blind users know this is the end of the page) -->
+        <p>Connect with me on <a href="https://www.linkedin.com/in/maggie-mcandrew-641425327?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B7vMBmJ0xTFmwnsZ7Lpe2VQ%3D%3D">LinkedIn!</a></p>
     </footer>
 </body>
 </html>

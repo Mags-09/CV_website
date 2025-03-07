@@ -7,20 +7,54 @@
 #4C2E05 brown
 #322E18 black
 
+#fffced cream-colored
+
 */
 
 body {
-    background: #322E18;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    letter-spacing: 2px; 
+    margin: 0;
+    padding: 5rem;
+    background: #fffced;
+    font-family: 'Roboto', sans-serif;
+    /* letter-spacing: 2px; */
+    color: #4C2E05;
+}
+
+nav {
+    background: #23395B;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    
+    z-index: 1000;
+}
+
+nav ul li {
+    display: inline;
+    margin: 1rem;
+}
+
+nav ul li a {
+    color: #fffced;
+    font-weight: bold;
 }
 
 #hero {
-    text-align: center;
-    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 2rem;
     /* 1rem = default font size on user's browser
     1rem = 10px
     rem is far better for accessibility!! */
+}
+
+.hero-text {
+    margin-left: 2rem; /* Add some space between the image and the text */
 }
 
 /* carot will select every h3 that is one level into the div */
@@ -30,13 +64,25 @@ body {
 
 #hero h1 {
     margin-bottom: 0;
-    font-size: 40px;
-    color:#23395B;
-    padding-left: 10px;
+    font-size: 3rem;
+    color: #4C2E05;
+    padding-left: 0px;
+}
+
+#hero h2 {
+    font-size: 2rem;
+    color: #828A95;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    line-height: 1.5;
 }
 
 #hero img {
-    border-radius: 20px;
+    border-radius: 30px;
+    padding: 2rem;
+    /* margin-top: 2rem; */
 }
 
 #hero > p {
@@ -49,10 +95,14 @@ body {
 
 hr {
     border-radius: 100%;
-    width: 50%;
+    border: 1px;
+    border-style: solid;
+    border-color: #8A817C;
+    width: 100%;
     /* when using percent, it's percent of the parent container!! */
 
-    margin: auto;
+    /* margin: auto; */
+    margin-right: 2rem;
 }
 
 #experience-title {
@@ -63,6 +113,8 @@ hr {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+
+    padding: 2rem;
 }
 
 .experience {
@@ -73,6 +125,7 @@ hr {
     border-style: dashed;
     /* dotted */
 
+    margin-top: 2rem;
     margin-bottom: 2rem;
     border-radius: 2px;
     color: #322E18;
@@ -80,6 +133,76 @@ hr {
     background-color: #FFFFFF;
 }
 
-#LinkedIn-logo {
+/* #LinkedIn-logo {
     width: 20rem;
+} */
+
+/* experimental additions for Contact area */
+
+#contact {
+    box-sizing: border-box;
+    background: #23395B;
+    padding: 2rem 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+#contact h2 {
+    font-size: 3rem;
+    /* background: #fffced; */
+    /* width: 20rem;
+    margin-left: 40rem;
+    margin-right: 30rem;
+    border-top: 5rem;
+    border-color: #fffced; */
+    color: #fffced;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+#contact label {
+    margin: 0.5rem 0;
+    color: #FFFFFF;
+}
+
+#contact input, #contact textarea {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+}
+
+#contact button {
+    padding: 0.5rem 2rem;
+    background: #8A817C;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#send-button {
+    padding: 2rem;
+    background: #fffced;
+    color: #8A817C;
+    cursor: pointer;
+}
+
+footer {
+    background: #23395B;
+    color: #FFFFFF;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer p {
+    background: #fffced;
+    color: #233958;
 }
